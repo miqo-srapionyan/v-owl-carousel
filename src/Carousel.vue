@@ -83,6 +83,12 @@
         autoplayHoverPause: {
             default: false
         },
+        owlPrevNavHtml: {
+          default: '<span aria-label="Previous">‹</span>'
+        },
+        owlNextNavHtml: {
+          default: '<span aria-label="Next">›</span>'
+        },
         responsive: {
             default() {
                 return {}
@@ -92,26 +98,26 @@
 
       mounted : function() {
         const owl = $('#' + this.elementHandle).owlCarousel({
-            items        : this.items,
-            margin       : this.margin,
-            loop         : this.loop,
-            center       : this.center,
-            nav          : this.nav,
-            autoplay     : this.autoplay,
-            autoplaySpeed: this.autoplaySpeed,
-            rewind       : this.rewind,
-            mouseDrag    : this.mouseDrag,
-            touchDrag    : this.touchDrag,
-            pullDrag     : this.pullDrag,
-            freeDrag     : this.freeDrag,
-            stagePadding     : this.stagePadding,
-            autoWidth     : this.autoWidth,
-            autoHeight     : this.autoHeight,
-            dots     : this.dots,
-            autoplayTimeout     : this.autoplayTimeout,
-            smartSpeed     : this.smartSpeed,
-            autoplayHoverPause     : this.autoplayHoverPause,
-            responsive     : this.responsive
+            items             : this.items,
+            margin            : this.margin,
+            loop              : this.loop,
+            center            : this.center,
+            nav               : this.nav,
+            autoplay          : this.autoplay,
+            autoplaySpeed     : this.autoplaySpeed,
+            rewind            : this.rewind,
+            mouseDrag         : this.mouseDrag,
+            touchDrag         : this.touchDrag,
+            pullDrag          : this.pullDrag,
+            freeDrag          : this.freeDrag,
+            stagePadding      : this.stagePadding,
+            autoWidth         : this.autoWidth,
+            autoHeight        : this.autoHeight,
+            dots              : this.dots,
+            autoplayTimeout   : this.autoplayTimeout,
+            smartSpeed        : this.smartSpeed,
+            autoplayHoverPause: this.autoplayHoverPause,
+            responsive        : this.responsive
         });
 
         $('#' + this.prevHandler).click(function() {
@@ -121,6 +127,9 @@
         $('#' + this.nextHandler).click(function() {
           owl.trigger('next.owl.carousel');
         });
+
+        $('.owl-prev').html(this.owlPrevNavHtml);
+        $('.owl-next').html(this.owlNextNavHtml);
       }
   }
 </script>

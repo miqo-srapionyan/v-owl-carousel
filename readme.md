@@ -326,6 +326,49 @@ Go backwards when the boundary has reached.
 
 
 
+- #### owlPrevNavHtml
+
+
+
+
+
+Type: `String`
+
+
+
+
+Default: `<span aria-label="Previous">‹</span>`
+
+
+
+
+
+The "prev" html.
+
+
+
+
+- #### owlNextNavHtml
+
+
+
+
+
+Type: `String`
+
+
+
+
+Default: `<span aria-label="Next">›</span>`
+
+
+
+
+The "next" html.
+
+
+
+
 - #### mouseDrag
 
 
