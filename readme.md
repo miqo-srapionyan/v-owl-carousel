@@ -370,7 +370,7 @@ The "next" html.
 
 
 
-- #### owlMainTag
+- #### owlNextNavHtml
 
 
 
@@ -381,13 +381,12 @@ Type: `String`
 
 
 
-Default: `div`
+Default: `<span aria-label="Next">›</span>`
 
 
 
 
-The owl container html tag.
-Supported tags: div, ul.
+The "next" html.
 
 
 

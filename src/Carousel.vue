@@ -3,13 +3,9 @@
         <span :id="prevHandler">
             <slot name="prev"></slot>
         </span>
-        <div :id="elementHandle" :class="['owl-carousel', 'owl-theme']" v-if="owlMainTag === 'dev'">
+        <div :id="elementHandle" :class="['owl-carousel', 'owl-theme']">
             <slot></slot>
         </div>
-
-        <ul :id="elementHandle" :class="['owl-carousel', 'owl-theme']" v-if="owlMainTag === 'ul'">
-            <slot></slot>
-        </ul>
         <span :id="nextHandler">
             <slot name="next"></slot>
         </span>
@@ -93,9 +89,6 @@
         owlNextNavHtml: {
           default: '<span aria-label="Next">›</span>'
         },
-        owlMainTag: {
-          default: "div"
-        },
         responsive: {
             default() {
                 return {}
@@ -103,7 +96,7 @@
         }
       },
 
-      created : function() {
+      mounted : function() {
         const owl = $('#' + this.elementHandle).owlCarousel({
             items             : this.items,
             margin            : this.margin,
