@@ -387,6 +387,7 @@ Default: `div`
 
 
 The owl container html tag.
+Supported tags: div, ul.
 
 
 
