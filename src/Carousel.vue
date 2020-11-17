@@ -103,7 +103,7 @@
         }
       },
 
-      mounted : function() {
+      created : function() {
         const owl = $('#' + this.elementHandle).owlCarousel({
             items             : this.items,
             margin            : this.margin,
