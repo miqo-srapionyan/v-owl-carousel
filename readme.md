@@ -370,28 +370,6 @@ The "next" html.
 
 
 
-- #### owlMainTag
-
-
-
-
-
-Type: `String`
-
-
-
-
-Default: `div`
-
-
-
-
-The owl container html tag.
-Supported tags: div, ul.
-
-
-
-
 - #### mouseDrag
 
 
