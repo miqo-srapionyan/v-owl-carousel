@@ -77,6 +77,9 @@
         autoplayTimeout: {
             default: 5000
         },
+        smartSpeed: {
+            default: 1000
+        },
         autoplayHoverPause: {
             default: false
         },
@@ -106,6 +109,7 @@
             autoHeight     : this.autoHeight,
             dots     : this.dots,
             autoplayTimeout     : this.autoplayTimeout,
+            smartSpeed     : this.smartSpeed,
             autoplayHoverPause     : this.autoplayHoverPause,
             responsive     : this.responsive
         });

@@ -284,6 +284,27 @@ Autoplay speed.
 
 
 
+- #### smartSpeed
+
+
+
+
+
+Type: `Number`
+
+
+
+
+Default: `1000`
+
+
+
+
+Smart speed.
+
+
+
+
 - #### rewind
 
 
