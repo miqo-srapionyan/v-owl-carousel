@@ -83,6 +83,9 @@
         autoplayHoverPause: {
             default: false
         },
+        dotsData: {
+            default: false
+        },
         owlPrevNavHtml: {
           default: '<span aria-label="Previous">‹</span>'
         },
@@ -117,7 +120,8 @@
             autoplayTimeout   : this.autoplayTimeout,
             smartSpeed        : this.smartSpeed,
             autoplayHoverPause: this.autoplayHoverPause,
-            responsive        : this.responsive
+            responsive        : this.responsive,
+            dotsData          : this.dotsData
         });
 
         $('#' + this.prevHandler).click(function() {

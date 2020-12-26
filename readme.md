@@ -503,6 +503,14 @@ Default: `true`
 
 Show dots navigation.
 
+- #### dotsData
+
+Type: `Boolean`
+
+Default: `false`
+
+Used by data-dot content.
+
 - #### autoplayTimeout
 
 Type: `Number`
